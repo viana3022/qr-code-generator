@@ -73,7 +73,7 @@ select option{
 }
 
 .color-inp{
-    -webkit-appearance: none;
+    appearance: none;
     background-color: transparent;
     width: 3.1em;
     height: 3.4em;
@@ -103,11 +103,11 @@ select option{
     margin-top: 2em;
 }
 
-.box button:disable{
+.box button:disabled {
     background-color: transparent;
     color: #a3aab6;
     border: 0.18em solid #a3aab6;
-}
+} 
 
 .box button{
     background-color: transparent;
@@ -130,4 +130,28 @@ select option{
 
 .hide{
     display: none;
+}
+
+/*footer*/
+.rodape{
+    background-color: #377dff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.rodape i{
+    color: #3580db;
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}  
+
+.rodape p{
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
 }

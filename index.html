@@ -10,25 +10,48 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <!--QR Code CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <!--favicon-->
 </head>
 <body>
 <div class="wrapper">
     <input type="text" id="userInput" placeholder="Insira uma URL ou texto">
     <div class="options">
-        <select class="sizeOptions">
+        <select class="sizeOptions" id="sizeOptions">
             <option value="100" selected>100 x 100</option>
             <option value="200">200 x 200</option>
             <option value="300">300 x 300</option>
         </select>
         <input type="color" id="BGColor" class="color-inp"/>
-        <input type="color" id="BGColor" class="color-inp"/>
+        <input type="color" id="FGColor" class="color-inp"/>
     </div>
     <div class="box">
         <button id="submit" disabled>Gerar</button>
-        <a href="#" id="download">Download</a>
+        <a href="#" id="download" class="hide">Download</a>
     </div>
     <div class="container"></div>
 </div>
+
+<!--footer-->
+<footer class="rodape">
+    <div class="links">
+        <a href="https://www.linkedin.com/in/vinicius-viana-henriques/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/viana3022" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:vianavinicius444@gmail.com">
+            <i class="fab fa-google"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+    </div>
+    <p>Desenvolvido por Vinícius Viana Henriques</p>
+</footer>
+<!--end footer-->
     <!--Script-->
     <script src="./JS/script.js"></script>
 </body>
